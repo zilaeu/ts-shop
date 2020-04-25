@@ -1,0 +1,169 @@
+@charset "UTF-8";
+//-----------------------------------------------------
+// setting scss
+//-----------------------------------------------------
+
+// 开关设置
+//-----------------------------------------------------
+$lte7: true !default; //是否兼容ie6-7
+$filter: false !default; //是否为ie6-8开启css3滤镜兼容，常用于渐变背景
+$printStyleSwitch: false !default; //是否开启打印样式
+
+// font相关
+//-----------------------------------------------------
+$baseFontSize: 12px !default;
+$baseLineHeight: 2 !default;
+$baseFontFamily: 'Helvetica Neue', Helvetica, Tahoma, sans-serif !default;
+$fontCn: 'SimSun'; //宋体
+$fontYaHei: 'Microsoft Yahei'; //微软雅黑
+$fontHeiTi: 'SimHei'; //黑体
+
+// 元素上下间距
+//-----------------------------------------------------
+$baseGap: 20px !default;
+
+// 基本颜色
+// color function : http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
+// lighten($color, $amount)
+// darken($color, $amount)
+// opacify($color, $amount)
+// mix($color1, $color2[, $amount])
+//-----------------------------------------------------
+$black: #000;
+$grayDarker: #333;
+$grayDark: #999;
+$grayMiddle: #525c64;
+$gray: #ccc;
+$grayLight: #f5f5f5;
+$white: #fff;
+$red: #cc3300;
+$blue: #00a3cf;
+$blueDark: #0064cd;
+$orange: #f47837;
+$green: #51b148;
+$yellow: #ffc40d;
+$pink: #c3325f;
+$purple: #7a43b6;
+$primary: #0078e7; //主色
+
+// link
+//-----------------------------------------------------
+// 如果只有一个值则滑过的值为这个值的darken 5%，如果
+// 有两个值则第二个值为滑过的值
+$linkColor: #08c !default;
+
+// scaffolding
+//-----------------------------------------------------
+$bodyBgColor: $white !default;
+$textColor: $grayDarker !default;
+
+// placeholder
+//-----------------------------------------------------
+// 变量分别为：是否输出表单的占位符placeholder样式，文本色
+$placeholder: true $gray !default;
+
+// 交互配色
+// 警告，错误，成功，提示
+//-----------------------------------------------------
+// 每个变量都有三个颜色值，分别为：文本色，背景色，边框色
+$warningColor: #514721 #fff6bf #ffd324 !default;
+$errorColor: #8a1f11 #fbe3e4 #fbc2c4 !default;
+$successColor: #264409 #e6efc2 #c6d880 !default;
+$infoColor: #205791 #d5edf8 #92cae4 !default;
+
+// radius
+//-----------------------------------------------------
+$baseRadius: 5px !default;
+$smallRadius: 3px !default;
+
+// z-index
+//-----------------------------------------------------
+$zindexDropdown: 1000 !default;
+$zindexFixedTopbar: 1010 !default;
+$zindexTooltip: 1020 !default;
+$zindexAlert: 1030 !default;
+$zindexModal: 1100 !default;
+
+// flex
+//-----------------------------------------------------
+$flex-d: (
+    'flex': flex,
+    'block': block,
+    'inline-block': inline-block
+);
+
+$flex-jc: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    between: space-between,
+    around: space-around
+);
+
+$flex-ai: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    stretch: stretch
+);
+
+$flex-ai-self: (
+    start: flex-start,
+    auto: auto,
+    end: flex-end,
+    stretch: stretch,
+    baseline: baseline
+);
+
+// size
+//-----------------------------------------------------
+
+$mpSize: (
+    '0': 0,
+    '1': 1,
+    '2': 2,
+    '3': 3,
+    '4': 4,
+    '5': 5
+);
+
+$mpType: (
+    m: 'margin',
+    p: 'padding'
+);
+
+$mpDirections: (
+    t: top,
+    r: right,
+    b: bottom,
+    l: left
+);
+
+// color
+$colorType: (
+    text: 'color',
+    bg: 'background-color',
+    border: 'border-color'
+);
+
+$color: (
+    'black': #000,
+    'gray-darker': #333,
+    'gray-dark': #999,
+    'gray-middle': #525c64,
+    'gray': #ccc,
+    'gray-light': #f5f5f5,
+    'white': #fff,
+    'red': #cc3300,
+    'blue': #00a3cf,
+    'blue-dark': #0064cd,
+    'orange': #f47837,
+    'green': #51b148,
+    'yellow': #ffc40d,
+    'pink': #c3325f,
+    'purple': #7a43b6,
+    'primary': #0078e7
+);
+
+// text
+$fontSize: (12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32);

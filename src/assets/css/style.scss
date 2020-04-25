@@ -1,0 +1,96 @@
+@import './scss/reset';
+
+// d-flex => display : flex
+@each $key, $value in $flex-d {
+    .d-#{$key} {
+        display: $value;
+    }
+}
+
+// jc-start => justify-content: flex-start;
+@each $key, $value in $flex-jc {
+    .jc-#{$key} {
+        justify-content: $value;
+    }
+}
+
+// ai-center => align-items : center
+@each $key, $value in $flex-ai {
+    .ai-#{$key} {
+        align-items: $value;
+    }
+}
+
+// ai-self-start => align-self: flex-start;
+@each $key, $value in $flex-ai-self {
+    .ai-self-#{$key} {
+        align-self: $value;
+    }
+}
+
+// [m,p]-[x,y] : size
+@each $typeKey, $typeValue in $mpType {
+}
+
+// [m,p]-[r,t,l,m] : size
+@each $typeKey, $typeValue in $mpType {
+    @each $drtKey, $drtValue in $mpDirections {
+        @each $sizeKey, $sizeValue in $mpSize {
+            .#{$typeKey}#{$drtKey}-#{$sizeKey} {
+                #{$typeValue}-#{$drtValue}: $sizeValue * 10px;
+            }
+        }
+        .#{$typeKey}#{$drtKey}-auto {
+            #{$typeValue}-#{$drtValue}: auto;
+        }
+    }
+
+    @each $sizeKey, $sizeValue in $mpSize {
+        .#{$typeKey}-#{$sizeKey} {
+            #{$typeValue}: $sizeValue * 10px;
+        }
+
+        .#{$typeKey}x-#{$sizeKey} {
+            #{$typeValue}-right: $sizeValue * 10px;
+            #{$typeValue}-left: $sizeValue * 10px;
+        }
+
+        .#{$typeKey}y-#{$sizeKey} {
+            #{$typeValue}-top: $sizeValue * 10px;
+            #{$typeValue}-bottom: $sizeValue * 10px;
+        }
+    }
+}
+
+// color
+@each $colorTypeKey, $colorTypeValue in $colorType {
+    @each $colorKey, $colorValue in $color {
+        .#{$colorTypeKey}-#{$colorKey} {
+            #{$colorTypeValue}: $colorValue !important;
+        }
+    }
+}
+
+// font-size
+@each $val in $fontSize {
+    .font-#{$val} {
+        font-size: $val * 1px;
+    }
+
+    .lh-#{$val} {
+        line-height: $val * 0.1;
+    }
+}
+
+.flex-column {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
