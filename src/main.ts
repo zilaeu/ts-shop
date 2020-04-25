@@ -13,6 +13,10 @@ import './assets/css/style.scss';
 import conf from './common/config/config';
 Vue.prototype.$conf = conf;
 
+// axios
+import api from './request/api';
+Vue.prototype.$api = api;
+
 Vue.config.productionTip = false;
 
 new Vue({
