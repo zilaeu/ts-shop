@@ -1,0 +1,100 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8106219",
+      "name": "edit",
+      "font_class": "edit",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "8106266",
+      "name": "locking",
+      "font_class": "locking",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "8106276",
+      "name": "visible",
+      "font_class": "visible",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "8106285",
+      "name": "eye_protection",
+      "font_class": "eye_protection",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "8106288",
+      "name": "nickname",
+      "font_class": "nickname",
+      "unicode": "e6a1",
+      "unicode_decimal": 59041
+    },
+    {
+      "icon_id": "10678403",
+      "name": "address list",
+      "font_class": "addresslist",
+      "unicode": "e6db",
+      "unicode_decimal": 59099
+    },
+    {
+      "icon_id": "10678421",
+      "name": "marks",
+      "font_class": "marks",
+      "unicode": "e6df",
+      "unicode_decimal": 59103
+    },
+    {
+      "icon_id": "10678429",
+      "name": "kids lock",
+      "font_class": "kidslock",
+      "unicode": "e6e0",
+      "unicode_decimal": 59104
+    },
+    {
+      "icon_id": "10678432",
+      "name": "group ctrl",
+      "font_class": "groupctrl",
+      "unicode": "e6e1",
+      "unicode_decimal": 59105
+    },
+    {
+      "icon_id": "12683723",
+      "name": "菜单",
+      "font_class": "icon_huabanfuben",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "12865675",
+      "name": "meeting",
+      "font_class": "meeting",
+      "unicode": "e6ec",
+      "unicode_decimal": 59116
+    },
+    {
+      "icon_id": "12865687",
+      "name": "series finale",
+      "font_class": "seriesfinale",
+      "unicode": "e6ed",
+      "unicode_decimal": 59117
+    },
+    {
+      "icon_id": "13168414",
+      "name": "权限",
+      "font_class": "quanxian",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    }
+  ]
+}

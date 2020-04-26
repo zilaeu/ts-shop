@@ -1,5 +1,9 @@
 const rt: Array<any> = [
     {
+        path: '/login',
+        component: 'user/login'
+    },
+    {
         path: '/',
         component: 'Home',
         redirect: { name: 'index' },

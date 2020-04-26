@@ -17,6 +17,9 @@ Vue.prototype.$conf = conf;
 import api from './request/api';
 Vue.prototype.$api = api;
 
+// 字体图标
+import './assets/fonts/iconfont.css';
+
 Vue.config.productionTip = false;
 
 new Vue({
