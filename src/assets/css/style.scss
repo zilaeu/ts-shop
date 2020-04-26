@@ -136,3 +136,27 @@
         }
     }
 }
+
+.el-aside,
+.el-main {
+    position: absolute;
+    top: 60px;
+}
+
+.el-aside {
+    height: calc(100% - 60px);
+    overflow-x: hidden;
+    .el-menu {
+        border-right: none;
+        .iconfont {
+            font-size: 20px;
+            margin-right: 4px;
+        }
+    }
+}
+
+.el-main {
+    left: 200px;
+    right: 0;
+    bottom: 0;
+}

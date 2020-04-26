@@ -1,8 +1,8 @@
 // 判断是否含有特殊字符
 function isSpecial(str: string) {
-    var specialKey =
+    const specialKey =
         "[`~!#$^&*()=|{}':;',\\[\\]<>/?~！%#￥……&*（）——|{}【】‘；：”“'。，、？]‘'";
-    for (var i = 0; i < str.length; i++) {
+    for (let i = 0; i < str.length; i++) {
         if (specialKey.indexOf(str.substr(i, 1)) != -1) {
             return false;
         }
