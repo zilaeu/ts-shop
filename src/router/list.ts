@@ -17,8 +17,12 @@ const rt: Array<any> = [
                 component: 'user/list'
             },
             {
-                meta: { title: '权限列表' },
+                meta: { title: '角色列表' },
                 component: 'roles/list'
+            },
+            {
+                meta: { title: '权限列表' },
+                component: 'rights/list'
             }
         ]
     }
