@@ -11,6 +11,10 @@ const rt: Array<any> = [
             {
                 meta: { title: '后台首页' },
                 component: 'index/index'
+            },
+            {
+                meta: { title: '用户列表' },
+                component: 'user/list'
             }
         ]
     }

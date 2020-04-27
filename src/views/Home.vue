@@ -96,11 +96,13 @@ export default {
                 '145': 'iconfont title-icon icon-meeting'
             },
             isCollapse: false,
-            activePath: ''
+            activePath: '',
+            Breadcrumbs: []
         };
     },
     created() {
         this.getMenuList();
+        this.getRouterBran();
     },
     methods: {
         // 获取菜单
@@ -111,6 +113,27 @@ export default {
             this.menuList = res.data;
 
             console.log(this.menuList);
+        },
+        // 获取面包屑
+        getRouterBran() {
+            const Breadcrumbs = this.$route.matched.filter(item => item.name);
+            console.log('matched', this.$route.matched);
+            const arr = [];
+            Breadcrumbs.forEach((k, v) => {
+                console.log(k, v);
+                if (k.name === 'Home' || k.name === 'index') return;
+                arr.push({ name: k.name, path: k.path, title: k.meta.title });
+            });
+            console.log('arr', arr);
+            if (arr.length > 0) {
+                arr.unshift({
+                    name: 'index',
+                    path: '/index',
+                    title: '后台首页'
+                });
+            }
+            this.Breadcrumbs = arr;
+            console.log(this.Breadcrumbs);
         }
     }
 };
