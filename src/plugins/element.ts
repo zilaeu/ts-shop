@@ -27,7 +27,9 @@ import {
     Tooltip,
     Select,
     MessageBox,
-    Option
+    Option,
+    Tag,
+    Tree
 } from 'element-ui';
 
 Vue.use(Button);
@@ -57,3 +59,5 @@ Vue.use(Tooltip);
 Vue.use(Select);
 Vue.prototype.$confirm = MessageBox;
 Vue.use(Option);
+Vue.use(Tag);
+Vue.use(Tree);

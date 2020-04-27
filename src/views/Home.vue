@@ -35,6 +35,7 @@
                         style="box-sizing: border-box;"
                         router
                         unique-opened
+                        :default-active="$route.path"
                     >
                         <el-submenu
                             v-for="item in menuList"
